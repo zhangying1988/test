@@ -251,3 +251,4 @@ function FreshTime(){
 FreshTime();
 var sh;
 sh= setInterval(FreshTime,500) 
+console.log('tes00000000')
