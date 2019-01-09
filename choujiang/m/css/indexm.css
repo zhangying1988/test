@@ -1,0 +1,706 @@
+﻿body {
+	overflow-x: hidden;
+}
+
+
+/*header*/
+
+.headerbox {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 2.7rem;
+	z-index: 99;
+}
+
+.header {
+	width: 100%;
+	position: relative;
+	height: 2.7rem;
+	background: #d00608;
+}
+
+.header .logo {
+	width: 5rem;
+	height: 2rem;
+	line-height: 2rem;
+	display: block;
+	margin: 0 auto;
+	display: table;
+	/*display: table;logo垂直居中*/
+}
+
+.imgbox {
+	/*logo垂直居中*/
+	display: table-cell;
+	vertical-align: middle;
+}
+.news {
+	height: .7rem;
+	background: #e01e1e;
+	width: 100%;
+	z-index: 7;
+}
+
+.news-lf {
+	width: 2rem;
+	padding-left: 1rem;
+	color: #ffde00;
+	line-height: .7rem;
+	float: left;
+	background: url(images/new_img.png) no-repeat 0.3rem center;
+	background-size: 0.5rem;
+}
+
+.news-rt {
+	width: 7rem;
+	float: right;
+	position: relative;
+	height: .7rem;
+	overflow: hidden;
+}
+
+.news-rt ul {
+	height: .7rem;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20000px;
+}
+
+.news-rt ul li {
+	float: left;
+	line-height: .7rem;
+}
+
+.news-rt ul li a {
+	color: #fff;
+/*	font-size: 12px;*/
+}
+
+.conter {
+	width: 100%;
+/*	overflow: hidden;*/
+	height: auto;
+	position: absolute;
+	z-index: -10;
+	background-color: #8d0000;
+	background-image: url(images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-size: contain;
+	padding-bottom: 2.5rem;
+	top: 2.7rem;
+}
+
+
+/*抽奖btn*/
+
+.chouj-btn {
+	margin: 0 auto;
+	text-align: center;
+	width: 2.5rem;
+	padding-top: 4rem;
+}
+
+
+/*中奖信息*/
+
+.wininfo {
+	margin: 0.3rem 0.3rem 0;
+}
+
+.wininfo h2 {
+	background: #d00608;
+	color: #f6ff00;
+	font-weight: bold;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	text-align: center;
+	font-size: 0.6rem;
+}
+
+
+/*winner 中奖人员信息滚动*/
+
+.wininfo-list {
+	height: 2rem;
+	padding: 0.3rem;
+	background: #efce83;
+	overflow: hidden;
+}
+
+.wininfo-list ul li {
+	width: 100%;
+	text-align: center;
+	color: #8c0000;
+	line-height: 0.25rem;
+}
+
+.wininfo-list ul li em {
+	font-style: normal;
+}
+
+
+/*.wininfo-list ul li span,
+.wininfo-list ul li em {
+	margin-right: 5px;
+}
+
+.wininfo-list ul li strong {
+	font-weight: bold;
+}
+
+.wininfo-list ul li b {
+	font-weight: normal;
+	margin-left: 5px;
+}*/
+
+
+/*倒计时*/
+
+.insetimebox {
+	background: #d1571b;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	padding-left: 0.2rem;
+}
+
+.insetime-label {
+	font-weight: bold;
+	font-size: 0.2rem;
+	color: #f6ff00;
+	float: left;
+}
+
+.insetime-label {}
+
+.insetime-note strong {
+	color: #fff;
+	padding: 0 5px;
+	font-size: 24px;
+}
+
+.insetime {
+	text-align: center;
+	float: left;
+}
+
+.insetime span {
+	display: inline-block;
+	text-align: center;
+	width: 1rem;
+	line-height: 0.8rem;
+	background: #c32d09;
+	font-size: 0.4rem;
+	color: #f6ff00;
+	font-weight: bold;
+	border-radius: 0.1rem;
+}
+
+.insetime em {
+	display: inline-block;
+	text-align: center;
+	width: 0.5rem;
+	line-height: 0.8rem;
+	font-size: 0.3rem;
+	color: #fff;
+	font-style: normal;
+}
+
+
+/*奖品预览*/
+
+.prizepre {}
+
+.moduletitle {
+	text-align: center;
+	border-top: 1px solid #f6ff00;
+	margin: 1rem .3rem 0;
+}
+
+.moduletitle span {
+	margin-top: -0.4rem;
+	text-align: center;
+	margin-bottom: .7rem;
+	display: block;
+}
+
+.moduletitle em {
+	background: #8c0000;
+	color: #f6ff00;
+	font-style: normal;
+	font-size: 0.6rem;
+	font-weight: bold;
+	padding: 0 0.2rem;
+}
+
+.prizepre li {
+	float: left;
+	width: 3rem;
+	margin-left: .25rem;
+}
+
+.prizepre li img {
+	width: 3rem;
+}
+
+.prizepre-list-three,
+.prizepre-list-sec {
+	width: 10rem;
+	overflow: hidden
+}
+
+.prizepre-list-sec {
+	margin-top: 0.3rem;
+}
+
+.prizepre-list-three ul {
+	width: 10.5rem;
+}
+
+.prizepre-list-sec {
+	margin-left: 1.7rem;
+}
+
+
+/*活动规则*/
+
+.rule {
+	margin: 0 auto;
+}
+
+.cilspst {
+	background: #d00608;
+	border: 1px solid #fed97c;
+	padding: 0.3rem;
+	margin: 0 0.3rem;
+}
+
+.cilspst p {
+	font-size: 0.3rem;
+	color: #fff;
+	line-height: 0.8rem;
+}
+
+.cilspst p em {
+	color: #f6ff00;
+	font-style: normal;
+}
+
+.cilspst p span {
+	color: #f6ff00;
+	width: 1.3rem;
+	display: inline-block;
+}
+
+.mt50 {
+	margin-top: 0.3rem;
+}
+
+
+/*服务条款*/
+
+.servce {}
+
+.servce p {
+	margin-top: 0.3rem;
+}
+
+
+/*footer*/
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 1.8rem;
+	bottom: 0;
+	left: 0;
+	z-index: 99999;
+	background: #6f0204;
+}
+
+.footerlist {
+	background: #6f0204;
+	margin: 0.1rem;
+	display: flex;
+	display: -webkit-flex;
+	display: -webkit-box;
+}
+
+.footerlist li {
+	flex: 1;
+	-webkit-flex: 1;
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-ms-flex: 1;
+}
+
+.footerlist a {
+	display: block;
+	width: 100%;
+	position: relative;
+	padding-top: .8rem;
+	text-align: center;
+	color: #fff;
+	line-height: 0.8rem;
+}
+
+.footerlist .active a {
+	background: #8d080a;
+}
+
+.footerlist a:before {
+	display: block;
+	position: absolute;
+	content: '';
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(images/icon_ft01.png);
+	background-position: center;
+	width: 100%;
+	height: 1rem;
+	background-size:.8rem;
+	cursor: pointer;
+	top: 0rem;
+}
+
+.ft2 a:before {
+	background-image: url(images/icon_ft02.png);
+}
+
+.ft3 a:before {
+	background-image: url(images/icon_ft03.png);
+}
+
+.ft4 a:before {
+	background-image: url(images/icon_ft04.png);
+}
+
+.ft5 a:before {
+	background-image: url(images/icon_ft05.png);
+}
+
+
+/*弹框*/
+
+.topbackdiv {
+	background: #000;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 2rem;
+	bottom: 4rem;
+	z-index: 10;
+	filter: alpha(opacity=0.7);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+.popWraper {
+	position: fixed;
+	z-index: 990;
+	width: 100%;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	display: none;
+}
+
+.bgClose {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	z-index: 991;
+	position: absolute;
+	top: 2rem;
+}
+
+.popbox {
+	width: 8.5rem;
+	margin: 0 auto;
+	position: relative;
+	z-index: 992;
+}
+
+.pophead {
+	position: relative;
+}
+
+.poptit {
+	position: relative;
+	background: #d00608;
+	font-size: 0.6rem;
+	font-weight: bold;
+	height: 1.2rem;
+	line-height: 1.2rem;
+	color: #fff;
+	position: relative;
+	text-align: center;
+}
+
+.popclose {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	background: url(images/icon_closes.png) no-repeat;
+	width: .6rem;
+	height: .6rem;
+	background-size: 0.6rem;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.popconten {
+	background: #efce83;
+	padding: 0.5rem;
+}
+
+.myfoca-list {
+	width: 6rem;
+	margin: 0 auto;
+	padding: 0 .5rem;
+}
+
+.popconten li {
+	float: left;
+	width: 1.8rem;
+	height: 1.8rem;
+	padding: 0.1rem;
+	cursor: pointer;
+}
+
+.popconten a {
+	display: block;
+	width: 1.8rem;
+	height: 1.8rem;
+	text-align: center;
+	position: relative;
+}
+
+.popconten img {
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+.popconten .active {
+	background: #d00608;
+}
+
+.popconten-num {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 0.5rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	border-radius: 50%;
+	right: 0;
+	text-align: center;
+	color: #fff;
+	background: #ff0003;
+}
+
+.popconten-num em {
+	font-style: normal;
+}
+
+
+/**/
+
+.popfooter {
+	background: #efce83;
+	padding: 0 30px 20px;
+}
+
+.popfooter-lottery {
+	margin: 0 1rem;
+}
+
+.popbtn {
+	width: 100%;
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	display: block;
+	font-size: 0.4rem;
+	font-weight: bold;
+	background-color: #ed482a;
+	background-repeat: no-repeat;
+	text-align: center;
+	border: 0;
+	color: #fff;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+.btnlf,
+.btnrt {
+	width: 47%;
+}
+
+.btnrt {
+	margin-left: 6%;
+}
+
+
+/*登录*/
+
+#login_box .item {
+	width: 100%;
+}
+
+.login-lab {
+	color: #454545;
+	display: inline-block;
+	width: 1.6rem;
+}
+
+.login-text {
+	width: 4.5rem;
+	border: solid 1px #fff;
+	background: #fff;
+	font-size: 0.4rem;
+	height: .8rem;
+	line-height: .8rem;
+	color: #000;
+	display: inline-block;
+}
+
+#login_box .error {
+	color: #ff0000;
+}
+
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+
+/*赠送福卡*/
+
+#sendfoca .popconten {
+	padding: 0.5rem;
+}
+
+.donee {
+	margin-top: 0.6rem;
+}
+
+.donee-lab {
+	color: #454545;
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: 2.7rem;
+}
+
+.donee-info {
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: 4.8rem;
+}
+
+.donee-txt {
+	display: block;
+	width: 3.3rem;
+	padding: 0 .1rem;
+	border: 0;
+	float: left;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	float: left;
+}
+
+.donee-notice {
+	text-align: right;
+	color: #454545;
+}
+
+.donee-btn {
+	border: 0;
+	background: #ed482a;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	text-align: center;
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 0 .15rem;
+	margin-left: .1rem;
+}
+
+
+/*转赠福卡成功*/
+
+.presen-succ {
+	background: url(images/icon_presents.png) 0 center no-repeat;
+	padding-left: 0.5rem;
+	color: #454545;
+	text-align: center;
+	height: .8rem;
+	line-height: .8rem;
+	background-size: .8rem;
+}
+
+
+/*抽奖弹框*/
+
+.lucky-img img {
+	width: 6rem;
+	height: 6rem;
+	margin: 0 auto;
+}
+
+.lottery-txt {
+	font-size: .6rem;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin: -.5rem 0 .5rem 0;
+}
+
+.lottery-num {
+	color: #fff;
+	text-align: right;
+	padding: 5px 20px;
+}
+
+.lottery-num span {
+	color: #ffcc00;
+}
+
+.wufu-img img {
+	width: 7rem;
+	margin: 0 auto;
+}
+
+#draw-wufu .wufu-img {
+	position: relative;
+}
+
+.wufu-cash {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: .85rem;
+	text-align: center;
+	color: #c92627;
+	font-weight: bold;
+	font-size: .5rem;
+}
+
+.wufu-cash span {
+	display: block;
+	text-align: center;
+}
+
+#complete-wufu .lottery-txt,
+#draw-wufu .lottery-txt {
+	margin-top: 20px;
+}

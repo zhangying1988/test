@@ -1,0 +1,775 @@
+﻿a {
+	text-decoration: none;
+}
+
+.inner {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+/*header*/
+
+.header {
+	height: 90px;
+	background: #d00608;
+}
+
+.logo {
+	padding-top: 21px;
+	float: left;
+}
+
+.nav {
+	padding-top: 4px;
+	float: right;
+	margin-left: 30px;
+}
+
+.nav ul li {
+	float: left;
+	margin-right: 25px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.nav ul li a {
+	display: block;
+	padding: 20px 16px 0;
+	font-size: 15px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+}
+
+.nav ul li a span {
+	color: #a2ff00;
+	padding: 0 5px;
+}
+
+.nav ul li:hover a {
+	color: yellow;
+}
+
+
+/*.nav ul li.nav1 a{background: url(../images/ys1.png) no-repeat center 15px;}
+.nav ul li.nav2 a{background: url(../images/ys2.png) no-repeat center 15px;}
+.nav ul li.nav3 a{background: url(../images/ys3.png) no-repeat center 15px;}
+.nav ul li.nav4 a{background: url(../images/ys4.png) no-repeat center 15px;}
+.nav ul li.nav5 a{background: url(../images/ys5.png) no-repeat center 15px;}*/
+
+
+/*滚动消息news*/
+
+.conter {
+	position: relative;
+	padding-top: 720px;
+	padding-bottom: 60px;
+	background: #8d0000 url(images/bg.jpg) no-repeat top center;
+}
+
+.newsbox {
+	height: 42px;
+	background: #e01e1e;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 7;
+}
+
+.news {
+	width: 1000px;
+}
+
+.news-lf {
+	padding-left: 28px;
+	color: #ffde00;
+	line-height: 42px;
+	font-size: 12px;
+	font-weight: bold;
+	float: left;
+	background: url(images/new_img.png) no-repeat center left;
+}
+
+.news-rt {
+	width: 895px;
+	float: right;
+	position: relative;
+	height: 42px;
+	overflow: hidden;
+}
+
+.news-rt ul {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20000px;
+}
+
+.news-rt ul li {
+	/*width:335px;*/
+	float: left;
+	line-height: 42px;
+}
+
+.news-rt ul li a {
+	color: #fff;
+	font-size: 12px;
+}
+
+
+/*抽奖btn*/
+
+.chouj-btn {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.login {
+	display: block;
+}
+
+
+/*中奖信息*/
+
+.wininfo {}
+
+.wininfo h2 {
+	background: #d00608;
+	color: #efce83;
+	font-weight: bold;
+	height: 60px;
+	line-height: 60px;
+	padding-left: 35px;
+	font-size: 20px;
+}
+
+
+/*winner 中奖人员信息滚动*/
+
+.wininfo-list {
+	height: 120px;
+	padding: 20px 36px;
+	background: #e9934d;
+}
+
+.wininfo-list-left,
+.wininfo-list-right {
+	float: left;
+	width: 40%;
+	overflow: hidden;
+	position: relative;
+	height: 120px;
+}
+
+.wininfo-list-right {
+	width: 60%;
+}
+
+.wininfo-list ul {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.wininfo-list ul li {
+	width: 100%;
+	text-align: center;
+	color: #d00608;
+}
+
+.wininfo-list ul li span,
+.wininfo-list ul li em {
+	margin-right: 5px;
+}
+
+.wininfo-list ul li strong {
+	font-weight: bold;
+}
+
+.wininfo-list ul li b {
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+
+/*倒计时*/
+
+.insetimebox {
+	background: #eb5403;
+	height: 72px;
+	line-height: 72px;
+}
+
+.insetime-label,
+.insetime-note {
+	font-weight: bold;
+	font-size: 20px;
+	color: #f6ff00;
+	float: left;
+}
+
+.insetime-label {
+	padding-left: 48px;
+}
+
+.insetime-note {
+	margin-left: 10px;
+}
+
+.insetime-note strong {
+	color: #fff;
+	padding: 0 5px;
+	font-size: 24px;
+}
+
+.insetime {
+	padding-top: 10px;
+	text-align: center;
+	float: left;
+	margin-left: 15px;
+}
+
+.insetime span {
+	display: inline-block;
+	text-align: center;
+	width: 55px;
+	line-height: 50px;
+	background: #c70b1a;
+	font-size: 30px;
+	color: #f6ff00;
+	font-weight: bold;
+	border-radius: 8px;
+}
+
+.insetime em {
+	display: inline-block;
+	text-align: center;
+	width: 35px;
+	line-height: 60px;
+	font-size: 16px;
+	color: #fff;
+}
+
+
+/*奖品预览*/
+
+.prizepre {
+	padding-bottom: 60px;
+}
+
+.prizepre h2 {
+	text-align: center;
+	padding: 64px 0 45px 0;
+}
+
+.prizepre li {
+	float: left;
+	width: 320px;
+	margin-right: 20px;
+}
+
+.prizepre li img {
+	width: 320px;
+}
+
+.prizepre-list-three,
+.prizepre-list-sec {
+	width: 1000px;
+	overflow: hidden
+}
+
+.prizepre-list-three ul {
+	width: 1020px;
+}
+
+.prizepre-list-sec {
+	padding-left: 85px;
+}
+
+
+/*活动规则*/
+
+.rule {
+	margin: 0 auto;
+}
+
+.rule h2 {
+	text-align: center;
+	padding: 60px 0;
+}
+
+.cilspst {
+	background: #d00608;
+	border: 1px solid #fed97c;
+	padding: 0 20px 60px 40px;
+}
+
+.cilspst p {
+	font-size: 14px;
+	color: #fff;
+	line-height: 28px;
+}
+
+.cilspst p em {
+	color: #f6ff00;
+}
+
+.cilspst p span {
+	color: #f6ff00;
+	width: 50px;
+	display: inline-block;
+}
+
+.mt50 {
+	margin-top: 40px;
+}
+
+
+/*服务条款*/
+
+.servce {}
+
+.servce h2 {
+	text-align: center;
+	padding: 60px 0;
+}
+
+.servce p {
+	margin-top: 40px;
+}
+
+
+/*footer*/
+
+.footer {
+	background: #d00608;
+}
+
+.copyright p {
+	text-align: center;
+	color: #fff;
+	line-height: 82px;
+}
+
+
+/*登录弹框*/
+
+.topbackdiv {
+	background: #000;
+	border: none;
+	height: 100%;
+	left: 0;
+	opacity: 0.15;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	filter: alpha(opacity=0.7);
+	-moz-opacity: 0.7;
+	opacity: 0.7;
+}
+
+
+#login_box .error {
+	padding-left: 127px;
+	color: #ff0000;
+}
+
+/*右侧悬浮*/
+.fixed-right {
+	position: fixed;
+	bottom: 80px;
+	right: 0;
+	display: none;
+}
+.fixed-tab {
+	width: 44px;
+	height: 44px;
+	background: #eb5403;
+	position: relative;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.tab-up i {
+	display: block;
+	position: absolute;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 22px;
+	left: 15px;
+	top: 10px;
+	background-image: url(images/icon-backtop.png);
+}
+.tab-text{
+	display: block;
+	text-indent: -999999px;
+}
+/*弹框*/
+.popbox {
+	position: fixed;
+	z-index: 990;
+	left: 50%;
+	top: 50%;
+	display: none;
+}
+
+#login_box {
+	width: 488px;
+	height: 300px;
+	margin-left: -244px;
+	margin-top: -150px;
+}
+
+.login-lab {
+	font-size: 15px;
+	color: #454545;
+	width: 76px;
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.login-text {
+	width: 265px;
+	margin-left: 5px;
+	height: 42px;
+	border: solid 1px #fff;
+	background: #fff;
+	font-size: 16px;
+	line-height: 50px;
+	padding-left: 10px;
+	color: #000;
+	border-radius: 5px;
+}
+
+#myfoca {
+	width: 400px;
+	height: 374px;
+	margin-left: -200px;
+	margin-top: -187px;
+}
+
+.pophead {
+	position: relative;
+}
+
+.poptit {
+	position: relative;
+	background: #d00608;
+	height: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	color: #fff;
+	position: relative;
+	padding-left: 20px;
+}
+
+.popclose {
+	position: absolute;
+	right: 16px;
+	top: 11px;
+	background: url(images/icon_closes.png) no-repeat;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.popconten {
+	background: #efce83;
+	padding: 20px;
+}
+
+.myfoca-list {
+	width: 330px;
+	margin: 0 auto;
+}
+
+.popconten li {
+	float: left;
+	width: 100px;
+	height: 100px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.popconten a {
+	display: block;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	position: relative;
+}
+
+.popconten img {
+	width: 100px;
+	height: 100px;
+}
+
+.popconten .active {
+	background: #d00608;
+}
+
+.popconten-num {
+	position: absolute;
+	top:4px;
+	right: 0px;
+	display: block;
+	width:26px;
+	height: 26px;
+	line-height: 26px;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	background: #ff0003;
+	
+}
+
+.popconten-num em {
+	font-style: normal;
+}
+
+
+/*.popconten1 a {
+	display: block;
+	background: url(images/foca_01.png) 0 0 no-repeat;
+	width: 100px;
+	height: 100px;
+	background-size: 100% 100%;
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/foca_01.png', sizingMethod='scale');
+	/*ie8下不识别background-size
+	text-align: center;
+	position: relative;
+}*/
+
+
+/*.popconten-item02 a {
+	background-image: url(images/foca_02.png);
+	background: none\9;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/foca_02.png', sizingMethod='scale');
+	/*ie8下不识别background-size
+}*/
+
+
+/*弹框按钮*/
+
+.popfooter {
+	background: #efce83;
+	padding: 0 30px 20px;
+}
+#login_box .popfooter {
+	padding: 0 62px 40px
+}
+.popbtn {
+	width: 100%;
+	float: left;
+	height: 44px;
+	display: block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 44px;
+	background-color: #ed482a;
+	background-repeat: no-repeat;
+	line-height: 44px;
+	text-align: center;
+	border: 0;
+	color: #fff;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.btnlf,
+.btnrt {
+	width: 47%;
+}
+
+.btnrt {
+	margin-left: 6%;
+}
+
+
+/*赠送福卡弹框*/
+
+#sendfoca {
+	width: 400px;
+	height: 450px;
+	margin-left: -200px;
+	margin-top: -225px;
+}
+
+.donee {
+	margin-top: 20px;
+}
+
+.donee-lab {
+	color: #454545;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+}
+
+.donee-info {
+	float: left;
+	height: 36px;
+	line-height: 36px;
+}
+
+.donee-txt {
+	display: block;
+	width: 200px;
+	margin-right: 5px;
+	padding: 0 5px;
+	border: 0;
+	float: left;
+	height: 36px;
+	line-height: 40px;
+	float: left;
+}
+
+.donee-notice {
+	text-align: right;
+	color: #454545;
+}
+
+.donee-btn {
+	border: 0;
+	background: #ed482a;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	color: #fff;
+	display: block;
+	float: left;
+	padding: 0 10px;
+}
+
+
+/*福卡赠送成功*/
+
+#sendfoca-succeed {
+	width: 400px;
+	height: 428px;
+	margin-left: -200px;
+	margin-top: -214px;
+}
+
+.presen-succ {
+	background: url(images/icon_presents.png) 20px center no-repeat;
+	padding-left: 50px;
+	color: #454545;
+	text-align: center;
+	height: 43px;
+	line-height: 43px;
+	margin: 10px 20px 0;
+}
+
+
+/*抽奖弹框*/
+
+.popconten-lottery {
+	text-align: center;
+}
+
+.lucky-img img {
+	width: 400px;
+	height: 400px;
+}
+
+#bless {
+	width: 500px;
+	height: 480px;
+	margin-left: -250px;
+	margin-top: -240px;
+}
+
+#collectwufu {
+	width: 500px;
+	height: 500px;
+	margin-left: -250px;
+	margin-top: -250px;
+}
+
+#complete-wufu,
+#draw-wufu {
+	width: 500px;
+	height: 500px;
+	margin-left: -250px;
+	margin-top: -250px;
+}
+
+#collectwufu .popclose {
+	top: 49px;
+	right: 109px;
+}
+
+#bless .popclose {
+	right: 100px;
+	top: 80px;
+}
+
+#complete-wufu .popclose,
+#draw-wufu .popclose {
+	right: 100px;
+	top: 80px;
+}
+
+.popfooter-lottery {
+	margin: 0 80px;
+}
+
+.lottery-txt {
+	font-size: 36px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin: -50px 0 20px;
+}
+
+.lottery-num {
+	color: #fff;
+	text-align: right;
+	padding: 5px 20px;
+}
+
+.lottery-num span {
+	color: #ffcc00;
+}
+
+.wufu-img img {
+	width: 340px;
+}
+
+#complete-wufu .wufu-img img,
+#draw-wufu .wufu-img img {
+	width: 400px;
+}
+
+#draw-wufu .wufu-img {
+	position: relative;
+}
+
+.wufu-cash {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 60px;
+	text-align: center;
+	color: #c92627;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.wufu-cash span {
+	display: block;
+	text-align: center;
+}
+
+#complete-wufu .lottery-txt,
+#draw-wufu .lottery-txt {
+	margin-top: 20px;
+}
