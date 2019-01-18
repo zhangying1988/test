@@ -125,7 +125,7 @@
 /*winner 中奖人员信息滚动*/
 
 .wininfo-list {
-	height: 2rem;
+	height: 1.5rem;
 	padding: 0.3rem;
 	background: #efce83;
 	overflow: hidden;
@@ -135,7 +135,7 @@
 	width: 100%;
 	text-align: center;
 	color: #8c0000;
-	line-height: 0.25rem;
+	line-height: 0.2rem;
 }
 
 .wininfo-list ul li em {
@@ -281,7 +281,7 @@
 .cilspst p {
 	font-size: 0.3rem;
 	color: #fff;
-	line-height: 0.8rem;
+	line-height: 0.6rem;
 }
 
 .cilspst p em {
@@ -314,16 +314,16 @@
 footer {
 	position: fixed;
 	width: 100%;
-	height: 1.8rem;
+	height: 1.5rem;
 	bottom: 0;
 	left: 0;
-	z-index: 99999;
+	z-index: 9;
 	background: #6f0204;
 }
 
 .footerlist {
 	background: #6f0204;
-	margin: 0.1rem;
+	margin: 0.05rem;
 	display: flex;
 	display: -webkit-flex;
 	display: -webkit-box;
@@ -341,10 +341,10 @@ footer {
 	display: block;
 	width: 100%;
 	position: relative;
-	padding-top: .8rem;
+	padding-top: .7rem;
 	text-align: center;
 	color: #fff;
-	line-height: 0.8rem;
+	line-height: 0.7rem;
 }
 
 .footerlist .active a {
@@ -361,7 +361,7 @@ footer {
 	background-position: center;
 	width: 100%;
 	height: 1rem;
-	background-size:.8rem;
+	background-size:.7rem;
 	cursor: pointer;
 	top: 0rem;
 }
@@ -453,7 +453,10 @@ footer {
 	cursor: pointer;
 	z-index: 1;
 }
-
+.poptit .popclose{
+	right: .5rem;
+	top: .3rem;
+}
 .popconten {
 	background: #efce83;
 	padding: 0.5rem;

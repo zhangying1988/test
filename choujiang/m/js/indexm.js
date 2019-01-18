@@ -130,6 +130,7 @@ function sendFoca(obj) { //点击赠送好友按钮
 }
 
 function topBox(id) { //公用弹框方法
+	//	if(!$('body').find('.topbackdiv').length > 0) {
 	if(!$('#' + id).find('.topbackdiv').length > 0) {
 		$('#' + id).append(' <div class="topbackdiv" ></div>');
 		$('.topbackdiv').addClass(id);
@@ -147,23 +148,22 @@ function topBox(id) { //公用弹框方法
 	}
 }
 //倒计时
-function FreshTime(){
-    var endtime=new Date("2019/2/15,12:20:12");//结束时间
-    var nowtime = new Date();//当前时间
-    var lefttime=  parseInt((endtime.getTime()-nowtime.getTime())/1000)  ; 
-    d=  parseInt(lefttime/24/60/60);
-    h=  parseInt((lefttime/(60*60))%24);
-    m=  parseInt(lefttime/60%60);
-    s=  parseInt(lefttime%60);
-    
-    $("#t_s").html(s);
-    $("#t_d").html(d);
-    $("#t_h").html(h);
-    $("#t_m").html(m);
-    if(lefttime<=0){
-    	clearInterval(sh);
-    }
+function FreshTime() {
+	var endtime = new Date("2019/2/15,12:20:12"); //结束时间
+	var nowtime = new Date(); //当前时间
+	var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+	d = parseInt(lefttime / 24 / 60 / 60);
+	h = parseInt((lefttime / (60 * 60)) % 24);
+	m = parseInt(lefttime / 60 % 60);
+	s = parseInt(lefttime % 60);
+	$("#t_s").html(s);
+	$("#t_d").html(d);
+	$("#t_h").html(h);
+	$("#t_m").html(m);
+	if(lefttime <= 0) {
+		clearInterval(sh);
+	}
 }
 FreshTime();
 var sh;
-sh= setInterval(FreshTime,500) 
+sh = setInterval(FreshTime, 500)
